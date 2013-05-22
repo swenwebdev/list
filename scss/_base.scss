@@ -1,0 +1,91 @@
+/* 
+	Place your compass imports, own mixins and project variables here.
+*/
+
+$color_bg: #EDEDEB;
+$color_dark: #34495E;
+$color_highlight: #1ABC9C;
+$anim_spd: 0.4s;
+
+
+
+body {
+	width: 100%;
+	min-height: 100%;
+}
+
+.position {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 0;
+}
+
+.container {
+	position: relative;
+	width: 100%;
+	margin: auto;
+	min-height: 100%;
+	background-color: $color_bg;
+	overflow: hidden;
+}
+
+.content {
+	padding: 1em;
+}
+
+.list > li {
+	position: relative;
+
+	button {
+		cursor: pointer;
+		background-color: transparent;
+		border: 0;
+		float: right;
+	}
+	ul {
+		margin: 0 1em;
+	}
+}
+
+section {
+	overflow: hidden;
+}
+
+.status {
+	margin: 1.5em 1em;
+	border-bottom: 1px solid darken($color_bg, 10%);
+	a {
+		float: left;
+		display: block;
+		color: $color_dark;
+		text-decoration: none;
+		margin-bottom: -1px;
+		margin-right: 1.5em;
+		border-bottom: 2px solid transparent;
+		-webkit-transition: border-color $anim_spd;
+		transition: border-color $anim_spd;
+	}
+
+	.active {
+		border-bottom: 2px solid $color_highlight;
+	}
+
+	&:after {
+	  content: "";
+	  display: table;
+	  clear: both;
+	}
+}
+
+.green {
+	border-left: 4px solid #7ebf7e;
+}
+
+.yellow {
+	border-left: 4px solid #fccf6f;
+}
+
+.red {
+	border-left: 4px solid #dd7573;
+}

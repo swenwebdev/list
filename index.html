@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8" />
+<title>list</title>
+
+<script src="js/jquery.js" type="text/javascript"></script>
+<script src="js/functions.js" type="text/javascript"></script>
+<script src="js/scripts.js" type="text/javascript"></script>
+
+<link rel="stylesheet" href="css/style.css" type="text/css" />
+
+</head>
+ 
+<body>
+<div class="position">
+	<div class="container">
+		<header>
+			<h1>fancy appname</h1>
+			<button class="showAddList"><i class='icon-list'></i> add list</button>
+		</header>
+		<div class="content">
+			<div class="options">
+				<input type="text" placeholder="add list"><button class="addList">add</button><br />
+			</div>
+			<input id="filter" type="text" placeholder="search...">
+			<ul class="list">
+				<li>
+					<div class='listHeader headerActive'>urgent</div>
+					<ul class="urgent listItems"></ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class="log"></div>
+</body>
+</html>

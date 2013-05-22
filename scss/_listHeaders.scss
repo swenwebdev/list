@@ -1,0 +1,38 @@
+/* 
+	all about listHeaders
+*/
+
+.listHeader {
+	cursor: pointer;
+	padding: 1em;
+	color: $color_bg;
+	background-color: $color_dark;
+	margin-bottom: 1px;
+	-webkit-transition: background-color $anim_spd;
+	transition: background-color $anim_spd;
+
+	button {
+		margin-top: -0.1em;
+		color: $color_bg;
+		-webkit-transition: color $anim_spd;
+		transition: color $anim_spd;
+
+		&:hover {
+			color: #dd7573;
+		}
+	}
+
+	&:hover {
+		color: #ffffff;
+		background-color: darken($color_dark, 5%);
+	}
+
+	h2 {
+		float: left;
+	}
+}
+
+.headerActive {
+	color: #ffffff;
+	background-color: darken($color_dark, 5%);
+}

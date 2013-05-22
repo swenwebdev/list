@@ -1,0 +1,14 @@
+{
+  "main": "index.html",
+  "name": "list",
+  "description": "list app",
+  "version": "0.1",
+  "keywords": [ "json", "node-webkit" ],
+  "window": {
+    "icon": "icons/128.png",
+    "toolbar": true,
+    "width": 500,
+    "height": 800,
+    "position": "mouse"
+  }
+}

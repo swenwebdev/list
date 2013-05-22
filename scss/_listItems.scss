@@ -1,0 +1,49 @@
+/* 
+	all about listItems
+*/
+
+.urgent {
+	padding: 1.5em 0;
+}
+
+.listItems > li {
+	cursor: default;
+	padding: 1em;
+	color: $color_dark;
+	background-color: #ffffff;
+	margin-bottom: 1px;
+	-webkit-transition: background-color $anim_spd;
+	transition: background-color $anim_spd;
+
+	&:hover {
+		background-color: lighten($color_bg, 3%);
+	}
+
+	button {
+		padding: 0;
+		margin: 0 0 0 1em;
+		color: darken($color_bg, 20%);
+		-webkit-transition: color $anim_spd;
+		transition: color $anim_spd;
+	}
+
+	/* reverserse order because of float right */
+	button:nth-of-type(1):hover {
+		color: #dd7573;
+	}
+
+	button:nth-of-type(2):hover {
+		color: #7ebf7e;
+	}
+}
+
+.noListItems {
+	padding: 2em;
+	text-align: center;
+	color: darken($color_bg, 40%);
+	font-weight: bold;
+}
+
+.newItem {
+	background-color: lighten($color_highlight, 40%) !important;
+}
